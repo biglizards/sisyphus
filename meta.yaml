@@ -1,0 +1,16 @@
+---
+documentclass: article
+bibliography: biblio.bib
+natbiboptions: sort, numbers
+biblio-style: unsrt
+figPrefix:
+  - "Fig."
+  - "Figs."
+secPrefix:
+  - "Section"
+  - "Sections"
+header-includes: |
+  ```{=latex}
+  \interfootnotelinepenalty=10000
+  ```
+...
