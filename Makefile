@@ -14,4 +14,4 @@ paper:
 	@pdflatex main.tex
 	@bibtex main
 	@pdflatex main.tex
-	@rm main.{aux,log,out,bbl,blg,tex}
+	@rm main.{aux,log,out,bbl,tex,blg} 2>/dev/null

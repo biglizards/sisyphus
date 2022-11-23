@@ -1,8 +1,108 @@
  
-@article{ISB,
- author={Akanksha Jain and Calvin Lin},
- title={Linearizing Irregular Memory Accesses for Improved Correlated Prefetching},
- year={2013},
- howpublished={\url{https://www.cl.cam.ac.uk/teaching/2223/R265/cam-only/micro13.pdf}},
- journal={MICRO-46: Proceedings of the 46th Annual IEEE/ACM International Symposium on Microarchitecture}
+@article{eraser,
+ author={S. Savage and M. Burrows and G. Nelson and P. Sobalvarro and T. Anderson},
+ title={Eraser: a dynamic data race detector for multithreaded programs},
+ year={1997},
+ journal={ACM Trans. Comput. Syst}
 }
+
+@INPROCEEDINGS{deterministic,
+
+  author={Poluri, Sri Varun and Ramanathan, Murali Krishna},
+
+  booktitle={2015 IEEE International Conference on Software Maintenance and Evolution (ICSME)}, 
+
+  title={Deterministic dynamic race detection across program versions}, 
+
+  year={2015},
+
+  volume={},
+
+  number={},
+
+  pages={181-190},
+
+  doi={10.1109/ICSM.2015.7332464}}
+
+  
+  @inproceedings{RELAY,
+author = {Voung, Jan Wen and Jhala, Ranjit and Lerner, Sorin},
+title = {RELAY: Static Race Detection on Millions of Lines of Code},
+year = {2007},
+isbn = {9781595938114},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1287624.1287654},
+doi = {10.1145/1287624.1287654},
+abstract = {Data races occur when multiple threads are about to access the same piece of memory, and at least one of those accesses is a write. Such races can lead to hard-to-reproduce bugs that are time consuming to debug and fix. We present RELAY, a static and scalable race detection analysis in which unsoundness is modularized to a few sources. We describe the analysis and results from our experiments using RELAY to find data races in the Linux kernel, which includes about 4.5 million lines of code.},
+booktitle = {Proceedings of the the 6th Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on The Foundations of Software Engineering},
+pages = {205–214},
+numpages = {10},
+keywords = {static analysis, race detection},
+location = {Dubrovnik, Croatia},
+series = {ESEC-FSE '07}
+}
+
+@article{10.1145/1165389.945468,
+author = {Engler, Dawson and Ashcraft, Ken},
+title = {RacerX: Effective, Static Detection of Race Conditions and Deadlocks},
+year = {2003},
+issue_date = {December 2003},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {37},
+number = {5},
+issn = {0163-5980},
+url = {https://doi.org/10.1145/1165389.945468},
+doi = {10.1145/1165389.945468},
+abstract = {This paper describes RacerX, a static tool that uses flow-sensitive, interprocedural analysis to detect both race conditions and deadlocks. It is explicitly designed to find errors in large, complex multithreaded systems. It aggressively infers checking information such as which locks protect which operations, which code contexts are multithreaded, and which shared accesses are dangerous. It tracks a set of code features which it uses to sort errors both from most to least severe. It uses novel techniques to counter the impact of analysis mistakes. The tool is fast, requiring between 2-14 minutes to analyze a 1.8 million line system. We have applied it to Linux, FreeBSD, and a large commercial code base, finding serious errors in all of them. RacerX is a static tool that uses flow-sensitive, interprocedural analysis to detect both race conditions and deadlocks. It uses novel strategies to infer checking information such as which locks protect which operations, which code contexts are multithreaded, and which shared accesses are dangerous. We applied it to FreeBSD, Linux and a large commercial code base and found serious errors in all of them.},
+journal = {SIGOPS Oper. Syst. Rev.},
+month = {oct},
+pages = {237–252},
+numpages = {16},
+keywords = {program checking, deadlock detection, race detection}
+}
+
+@inproceedings{RacerX,
+author = {Engler, Dawson and Ashcraft, Ken},
+title = {RacerX: Effective, Static Detection of Race Conditions and Deadlocks},
+year = {2003},
+isbn = {1581137575},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/945445.945468},
+doi = {10.1145/945445.945468},
+abstract = {This paper describes RacerX, a static tool that uses flow-sensitive, interprocedural analysis to detect both race conditions and deadlocks. It is explicitly designed to find errors in large, complex multithreaded systems. It aggressively infers checking information such as which locks protect which operations, which code contexts are multithreaded, and which shared accesses are dangerous. It tracks a set of code features which it uses to sort errors both from most to least severe. It uses novel techniques to counter the impact of analysis mistakes. The tool is fast, requiring between 2-14 minutes to analyze a 1.8 million line system. We have applied it to Linux, FreeBSD, and a large commercial code base, finding serious errors in all of them. RacerX is a static tool that uses flow-sensitive, interprocedural analysis to detect both race conditions and deadlocks. It uses novel strategies to infer checking information such as which locks protect which operations, which code contexts are multithreaded, and which shared accesses are dangerous. We applied it to FreeBSD, Linux and a large commercial code base and found serious errors in all of them.},
+booktitle = {Proceedings of the Nineteenth ACM Symposium on Operating Systems Principles},
+pages = {237–252},
+numpages = {16},
+keywords = {race detection, program checking, deadlock detection},
+location = {Bolton Landing, NY, USA},
+series = {SOSP '03}
+}
+
+@techreport{kitchenham2007guidelines,
+  abstract = {The objective of this report is to propose comprehensive guidelines for systematic literature reviews appropriate for software engineering researchers, including PhD students. A systematic literature review is a means of evaluating and interpreting all available research relevant to a particular research question, topic area, or phenomenon of interest. Systematic reviews aim to present a fair evaluation of a research topic by using a trustworthy, rigorous, and auditable methodology. The guidelines presented in this report were derived from three existing guidelines used by medical researchers, two books produced by researchers with social science backgrounds and discussions with researchers from other disciplines who are involved in evidence-based practice. The guidelines have been adapted to reflect the specific problems of software engineering research. The guidelines cover three phases of a systematic literature review: planning the review, conducting the review and reporting the review. They provide a relatively high level description. They do not consider the impact of the research questions on the review procedures, nor do they specify in detail the mechanisms needed to perform meta-analysis.},
+  added-at = {2019-11-16T00:31:45.000+0100},
+  author = {Kitchenham, Barbara Ann and Charters, Stuart},
+  biburl = {https://www.bibsonomy.org/bibtex/23f4b30c0fe1435b642467af4cca120ef/jpmor},
+  citeulike-article-id = {3955888},
+  day = 09,
+  institution = {Keele University and Durham University Joint Report},
+  interhash = {aed0229656ada843d3e3f24e5e5c9eb9},
+  intrahash = {3f4b30c0fe1435b642467af4cca120ef},
+  keywords = {engineering evidence evidence-based literature real review software systematic},
+  language = {English},
+  month = {07},
+  number = {EBSE 2007-001},
+  posted-at = {2009-01-28 11:17:05},
+  priority = {2},
+  school = {Keele University},
+  timestamp = {2020-10-07T13:36:50.000+0200},
+  title = {Guidelines for performing Systematic Literature Reviews in Software Engineering},
+  url = {https://www.elsevier.com/__data/promis_misc/525444systematicreviewsguide.pdf},
+  year = 2007
+}
+
+
+
